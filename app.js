@@ -19,7 +19,7 @@ mongoose.model(model_name, ExampleSchema, coll_name);
 var EXAMPLE = mongoose.model(model_name, coll_name);
 var example = new EXAMPLE();
 example.user_id = 1;
-example.username = 'stepock';
+example.username = 'tom';
 example.save(function(err){
   if(err){
     console.log('save failed');
