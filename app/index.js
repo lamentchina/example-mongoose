@@ -13,34 +13,18 @@ var UsersSchema = new Schema({
     type: Buffer
     , index: true
   }
-  /**
-   * 用户名
-   * @type {[type]}
-   */
   , userName: {
     type: String,
     index: true,
     required: true,
     unique: true
   },
-  /**
-   * 邮箱地址
-   * @type {String}
-   */
   email: {
     type: String,
     index: true,
     required: true
   },
-  /**
-   * 当前状态
-   * @type {Number} // TODO 值待定
-   */
   status: Number,
-  /**
-   * 最后登录时间
-   * @type {Date}
-   */
   lastLoginAt: Date
 });
 
@@ -57,8 +41,6 @@ var UsersSchema = new Schema({
 //   } else
 //     console.log('save success');
 // });
-
-
 
 UsersSchema.statics.add = function (obj) {
   this.create({
