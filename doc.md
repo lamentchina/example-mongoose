@@ -363,3 +363,7 @@ SchemaString.prototype.castForQuery = function ($conditional, val) {
 var handler;
 
 if (arguments.length === 2) {
+
+
+
+......
